@@ -28,7 +28,7 @@ SOFTWARE.*/
 
 OGame::OGame()
 {
-	m_display = std::unique_ptr<OWindow>(new OWindow());
+	m_display = std::make_unique<OWindow>();
 }
 
 OGame::~OGame()
@@ -37,16 +37,27 @@ OGame::~OGame()
 
 void OGame::run()
 {
-	MSG msg;
-	while (m_isRunning && !m_display->isClosed())
+	
+	while (m_isRunning)
 	{
-		if (PeekMessage(&msg, NULL, NULL, NULL, PM_REMOVE))
+		MSG msg = {};
+		if (PeekMessage(&msg, HWND(), NULL, NULL, PM_REMOVE))
 		{
-			TranslateMessage(&msg);
-			DispatchMessage(&msg);
+			if (msg.message == WM_QUIT)
+			{
+				m_isRunning = false;
+				continue;
+			}
+			else
+			{
+				TranslateMessage(&msg);
+				DispatchMessage(&msg);
+			}
 		}
-
-		Sleep(1);
+		else
+		{
+			Sleep(1);
+		}
 	}
 }
 

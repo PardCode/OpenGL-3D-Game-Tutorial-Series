@@ -23,10 +23,20 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.*/
 
 #include <OGL3D/Game/OGame.h>
+#include <iostream>
 
 int main()
 {
-	OGame game;
-	game.run();
+	try
+	{
+		OGame game;
+		game.run();
+	}
+	catch (const std::exception& e)
+	{
+		std::cout << "Error: " << e.what() << std::endl;
+		return -1;
+	}
+
 	return 0;
 }
