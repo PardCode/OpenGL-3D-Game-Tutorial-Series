@@ -22,57 +22,36 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.*/
 
-#include <OGL3D/Window/OWindow.h>
 #include <OGL3D/Game/OGame.h>
-#include <Windows.h>
-#include <assert.h>
+#include <OGL3D/Window/OWindow.h>
+#include <OGL3D/Graphics/OGraphicsEngine.h>
+#include <X11/Xlib.h>
+#include <X11/Xutil.h>
+#include <OGL3D/Graphics/X11/CX11Globals.h>
 
-LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
+
+void OGame::run()
 {
-	switch (msg)
-	{
-	case WM_DESTROY:
-	{
-		OWindow* window = (OWindow*)GetWindowLongPtr(hwnd, GWLP_USERDATA);
-		break;
-	}
-	case WM_CLOSE:
-	{
-		PostQuitMessage(0);
-		break;
-	}
-	default:
-		return DefWindowProc(hwnd, msg, wParam, lParam);
-	}
-	return NULL;
-}
+    onCreate();
 
+    while (m_isRunning)
+    {
+        //Retrieve the next X11 event from the events queue
+        if (XPending((Display*)GlobalDisplay)) {
+            XEvent xev;
+            XNextEvent((Display*)GlobalDisplay, &xev);
 
-OWindow::OWindow()
-{
-	WNDCLASSEX wc = {};
-	wc.cbSize = sizeof(WNDCLASSEX);
-	wc.lpszClassName = L"OGL3DWindow";
-	wc.lpfnWndProc = &WndProc;
+            X11CheckEvent(m_display.get(),&xev);
 
-	auto classId = RegisterClassEx(&wc);
-	assert(classId);
+            if (xev.type == ClientMessage) {
+                if (xev.xclient.format == 32) {
+                   m_isRunning = false;
+                   continue;
+                }
+            }       
+        }
+        onUpdate();
+    }
 
-	RECT rc = { 0,0,1024,768 };
-	AdjustWindowRect(&rc, WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU, false);
-
-	m_handle = CreateWindowEx(NULL, MAKEINTATOM(classId), L"PardCode | OpenGL 3D Game", WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU, CW_USEDEFAULT, CW_USEDEFAULT,
-		rc.right - rc.left, rc.bottom - rc.top, NULL, NULL, NULL, NULL);
-
-	assert(m_handle);
-
-	SetWindowLongPtr((HWND)m_handle, GWLP_USERDATA, (LONG_PTR)this);
-
-	ShowWindow((HWND)m_handle, SW_SHOW);
-	UpdateWindow((HWND)m_handle);
-}
-
-OWindow::~OWindow()
-{
-	DestroyWindow(HWND(m_handle));
+    onQuit();
 }

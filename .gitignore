@@ -84,6 +84,7 @@ StyleCopReport.xml
 *.pidb
 *.svclog
 *.scc
+*.pro.user
 
 !Assets/Meshes/*.obj
 
