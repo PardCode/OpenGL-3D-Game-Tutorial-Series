@@ -69,7 +69,7 @@ OWindow::OWindow()
     NSUInteger windowStyle = NSTitledWindowMask  | NSClosableWindowMask ;
 
     NSRect screenRect = [[NSScreen mainScreen] frame];
-    NSRect viewRect = NSMakeRect(0, 0, 800, 600);
+    NSRect viewRect = NSMakeRect(0, 0, 1024, 768);
     NSRect windowRect = NSMakeRect(NSMidX(screenRect) - NSMidX(viewRect),
                                    NSMidY(screenRect) - NSMidY(viewRect),
                                    viewRect.size.width,

@@ -37,7 +37,7 @@ OWindow::OWindow()
     attributes.colormap = GlobalColorMap;
 
     Window window =
-        XCreateWindow(GlobalDisplay, GlobalWindowRoot, 0, 0, 800, 600, 0,
+        XCreateWindow(GlobalDisplay, GlobalWindowRoot, 0, 0, 1024, 768, 0,
                       DefaultDepth(GlobalDisplay, GlobalScreenId), InputOutput, GlobalVisual,
                       CWColormap | CWEventMask, &attributes);
 
