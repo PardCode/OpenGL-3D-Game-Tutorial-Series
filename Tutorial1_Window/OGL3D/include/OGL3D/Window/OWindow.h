@@ -2,7 +2,7 @@
 
 C++ OpenGL 3D Game Tutorial Series (https://github.com/PardCode/OpenGL-3D-Game-Tutorial-Series)
 
-Copyright (c) 2021, PardCode
+Copyright (c) 2021-2022, PardCode
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -71,7 +71,7 @@ If you want to modify and redistribute the source code files available in this r
 C++ OpenGL 3D Game Tutorial Series (https://github.com/PardCode/OpenGL-Game-Tutorial-Series)
 <project name>, <website link or nothing>
   
-Copyright (c) 2021, PardCode
+Copyright (c) 2021-2022, PardCode
 Copyright (c) <your years>, <your name>  
 ...
 ```
