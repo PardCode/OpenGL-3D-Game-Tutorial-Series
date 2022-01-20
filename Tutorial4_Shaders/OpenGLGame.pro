@@ -26,7 +26,7 @@ TEMPLATE = app
 CONFIG += console c++17
 CONFIG -= app_bundle
 CONFIG -= qt
-
+QMAKE_MACOSX_DEPLOYMENT_TARGET = 10.15
 
 INCLUDEPATH += OGL3D/include
 INCLUDEPATH += OGL3D/source
