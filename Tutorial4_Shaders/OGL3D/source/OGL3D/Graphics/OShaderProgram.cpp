@@ -28,6 +28,7 @@ SOFTWARE.*/
 #include <sstream>
 #include <string>
 #include <vector>
+#include <filesystem>
 
 OShaderProgram::OShaderProgram(const OShaderProgramDesc& desc)
 {
@@ -55,7 +56,10 @@ ui32 OShaderProgram::getId()
 void OShaderProgram::attach(const wchar_t* shaderFilePath, const OShaderType& type)
 {
 	std::string shaderCode;
-	std::ifstream shaderStream(shaderFilePath);
+	
+	auto path = std::filesystem::path(shaderFilePath);
+	
+    std::ifstream shaderStream(path);
 	if (shaderStream.is_open())
 	{
 		std::stringstream sstr;
