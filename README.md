@@ -8,7 +8,7 @@
 
 [`C++ OpenGL 3D Game Tutorial Series`](https://www.youtube.com/playlist?list=PLv8DnRaQOs5-TyYnF56YghOxQBNr1VVmF) is a YouTube Tutorial Series,</br>
 whose purpose is to help all those who want to take their first steps in the game development from scratch.</br>
-In this series you'll learn how to create an OpenGL 3D Game Demo, starting from the creation of a Window by using Win32, Cocoa and X11 APIs (respectively Windows, macOS and Linux)</br>
+In this series you'll learn how to create a Cross-Platform OpenGL 3D Game in C++ from scratch, starting from the creation of a Window by using Win32, Cocoa and X11 APIs (respectively Windows, macOS and Linux)</br>
 to the making of all the necessary sub-systems in order to achieve a complete 3D Game, like</br>
 
 - OpenGL 3D Graphics Engine</br>
