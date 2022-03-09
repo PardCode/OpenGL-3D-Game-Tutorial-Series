@@ -12,13 +12,13 @@ In this series you'll learn how to create an OpenGL 3D Game Demo, starting from 
 to the making of all the necessary sub-systems in order to achieve a complete 3D Game, like</br>
 
 - OpenGL 3D Graphics Engine</br>
- - Vertex Array Object (VAO)</br>
- - Shaders</br>
- - Uniform Buffer Object (UBO)</br>
-- - ...
-- Entity System
-- Input System
-- ...
+-- Vertex Array Object (VAO)</br>
+-- Shaders</br>
+-- Uniform Buffer Object (UBO)</br>
+-- ...</br>
+- Entity System</br>
+- Input System</br>
+- ...</br>
 
 
 ---
