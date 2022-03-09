@@ -8,17 +8,22 @@
 
 [`C++ OpenGL 3D Game Tutorial Series`](https://www.youtube.com/playlist?list=PLv8DnRaQOs5-TyYnF56YghOxQBNr1VVmF) is a YouTube Tutorial Series,</br>
 whose purpose is to help all those who want to take their first steps in the game development from scratch.</br>
-In this series you'll learn how to create an OpenGL 3D Game Demo, starting from the creation of a Window by using Win32 API</br>
+In this series you'll learn how to create an OpenGL 3D Game Demo, starting from the creation of a Window by using Win32, Cocoa and X11 APIs (respectively Windows, macOS and Linux)</br>
 to the making of all the necessary sub-systems in order to achieve a complete 3D Game, like</br>
 
 - OpenGL 3D Graphics Engine</br>
+- - Vertex Array Object (VAO)</br>
+- - Shaders</br>
+- - Uniform Buffer Object (UBO)</br>
+- - ...
+- Entity System
 - Input System
-- etc.
+- ...
 
 
 ---
 
-For any **questions**, **doubts** or **clarifications** about the `C++ OpenGL 3D Game Tutorial Series`, you can join
+For any **questions**, **doubts** or **clarifications** about the `OpenGL 3D Game Tutorial Series`, you can join
 the [discord server](https://discord.gg/RymBzwKPyZ), where you can meet other users or developers like you.<br/>
 Before to ask any question, check the [FAQs](https://github.com/PardCode/OpenGL-3D-Game-Tutorial-Series/wiki/Frequently-Asked-Questions).
 The answers you are searching for could be already there.<br/>
