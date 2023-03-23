@@ -34,31 +34,10 @@ You can find the license [here](#license).
 This project is available under a free and permissive license, but needs a financial support to sustain its development.<br/> 
 The development includes both the making of video tutorials and the writing of the code.<br/> 
 Consider to support it through [`Patreon`](https://www.patreon.com/pardcode).<br/>  
-Any single contribution would be greately appreciated, regardless the amount.<br/>
-Many thanks to all [**these people**](#supporters) who have supported me so far! <br/>
+Every single contribution makes the difference, regardless the amount.<br/>
+Many thanks to all **the patrons** who have supported me so far! <br/>
   
 [![Patreon](https://img.shields.io/badge/Patreon-Donate-orange)](https://www.patreon.com/pardcode)  
-
-
-# Supporters
-
-Thank you so much for your huge support!
-
-**Patreon Supporters (alphabetical order)**  
-
-Adam L. - Ahmad A. - Alex G. - Andrey G. - Andrew C. - Andrew M. - Anotherbear Gamer - Asterot13 - Austin M.<br/>
-Bastien R. - bdfy - Biuret - Carlo S. - Daniel W. - Dennis - Edward T.O. - Elite Salad - EthanEdits - GameEngineer<br/>
-Guarded - hisuzuki - Howl C - Jack - James B. - James K. - JaviFML - Jesse M.C. - Jonas F. - Josh C. - Joshua v.<br/>
-Katherine M. - Kim W. - kuronk cat - Lie - Mackay N. - Manuel H. - Mateusz P. - Matthew - Michael W. - Miles H.<br/>
-Mohammed A. - Murdo M. - Nikhil R. - Neil W. - Oliver H. - Otturd - Patrick B. - Patrick L. - Peterson R.<br/>
-RamblingBaba - Ridtichai B. - Rem saigao - REX Li - Robson - SleepingDog - Slotho - Snip - Squeegiefilms<br/>
-Tatsuya - Tentacle Princess - The Spygineer - The Tutorial Chef - TheDevUK - Tim. A. - Tom L. - Valgard<br/>
-Werner O. - WyattFlash<br/>
-
-**All YouTube - Discord - GitHub - Twitter - Facebook followers and viewers**  
-
-P.S.: If you are a Patron and you want to be added/removed to/from this list,
-please send a message to PardCode through Patreon.
 
 # License
 
